@@ -1,20 +1,13 @@
 import 'package:flutter/material.dart';
-
+import 'package:quiz_app/start_screen.dart';
+ 
 void main() {
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
+  runApp(
+    MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+        backgroundColor: const Color.fromARGB(218, 74, 2, 141),
+        body: const StartScreen(),
       ),
-    );
-  }
+    ),
+  );
 }
